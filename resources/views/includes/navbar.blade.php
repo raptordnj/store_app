@@ -43,7 +43,7 @@
                         </li>
                     @endcan --}}
 
-                    @canany(['view-category', 'create-category'])
+                    @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                                 <i class="fas text-primary fa-list-alt"></i>
@@ -51,7 +51,7 @@
                             </a>
                             <div class="collapse" id="navbar-category">
                                 <ul class="nav nav-sm flex-column">
-                                 @can('view-category')
+                                 @can('create-permission')
                                     <li class="nav-item">
                                         <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Sub-Admin Add</span></a>
                                     </li>
@@ -80,7 +80,7 @@
                     @endcan
 
                     
-                    @canany(['view-category', 'create-category'])
+                    @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                                 <i class="fas text-primary fa-list-alt"></i>
@@ -88,7 +88,7 @@
                             </a>
                             <div class="collapse" id="navbar-category">
                                 <ul class="nav nav-sm flex-column">
-                                 @can('view-category')
+                                 @can('create-permission')
                                     <li class="nav-item">
                                         <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add</span></a>
                                     </li>
@@ -118,7 +118,7 @@
 
 
                                        
-                    @canany(['view-category', 'create-category'])
+                    @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                                 <i class="fas text-primary fa-list-alt"></i>
@@ -126,7 +126,7 @@
                             </a>
                             <div class="collapse" id="navbar-category">
                                 <ul class="nav nav-sm flex-column">
-                                 @can('view-category')
+                                 @can('create-permission')
                                     <li class="nav-item">
                                         <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add</span></a>
                                     </li>
@@ -155,7 +155,7 @@
                     @endcan
 
                                                           
-                    @canany(['view-category', 'create-category'])
+                    @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                                 <i class="fas text-primary fa-list-alt"></i>
@@ -163,7 +163,7 @@
                             </a>
                             <div class="collapse" id="navbar-category">
                                 <ul class="nav nav-sm flex-column">
-                                 @can('view-category')
+                                 @can('create-permission')
                                     <li class="nav-item">
                                         <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add</span></a>
                                     </li>
@@ -187,7 +187,7 @@
                     @endcan
 
                                                                              
-                    @canany(['view-category', 'create-category'])
+                    @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                                 <i class="fas text-primary fa-list-alt"></i>
@@ -195,7 +195,7 @@
                             </a>
                             <div class="collapse" id="navbar-category">
                                 <ul class="nav nav-sm flex-column">
-                                 @can('view-category')
+                                 @can('create-permission')
                                     <li class="nav-item">
                                         <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add</span></a>
                                     </li>
@@ -218,7 +218,7 @@
 
                     @endcan 
 
-                    @canany(['view-category', 'create-category'])
+                    @canany(['create-permission', 'create-category'])
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                             <i class="fas text-primary fa-list-alt"></i>
@@ -226,7 +226,7 @@
                         </a>
                         <div class="collapse" id="navbar-category">
                             <ul class="nav nav-sm flex-column">
-                             @can('view-category')
+                             @can('create-permission')
                                 <li class="nav-item">
                                     <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">SMS Sent</span></a>
                                 </li>
@@ -255,7 +255,7 @@
                 @endcan
 
                 
-                @canany(['view-category', 'create-category'])
+                @canany(['create-permission', 'create-category'])
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                         <i class="fas text-primary fa-list-alt"></i>
@@ -263,7 +263,7 @@
                     </a>
                     <div class="collapse" id="navbar-category">
                         <ul class="nav nav-sm flex-column">
-                         @can('view-category')
+                         @can('create-permission')
                             <li class="nav-item">
                                 <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add</span></a>
                             </li>
@@ -290,7 +290,7 @@
 
 
                             
-            @canany(['view-category', 'create-category'])
+            @canany(['create-permission', 'create-category'])
             <li class="nav-item">
                 <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                     <i class="fas text-primary fa-list-alt"></i>
@@ -298,7 +298,7 @@
                 </a>
                 <div class="collapse" id="navbar-category">
                     <ul class="nav nav-sm flex-column">
-                     @can('view-category')
+                     @can('create-permission')
                         <li class="nav-item">
                             <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Create Income</span></a>
                         </li>
@@ -339,7 +339,7 @@
 
 
                                   
-        @canany(['view-category', 'create-category'])
+        @canany(['create-permission', 'create-category'])
         <li class="nav-item">
             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
                 <i class="fas text-primary fa-list-alt"></i>
@@ -347,7 +347,7 @@
             </a>
             <div class="collapse" id="navbar-category">
                 <ul class="nav nav-sm flex-column">
-                 @can('view-category')
+                 @can('create-permission')
                     <li class="nav-item">
                         <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">System Setting</span></a>
                     </li>
