@@ -216,7 +216,7 @@
                             </div>
                         </li>
 
-                    @endcan
+                    @endcan 
 
                     @canany(['view-category', 'create-category'])
                     <li class="nav-item">
