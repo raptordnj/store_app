@@ -396,7 +396,7 @@
 
 
     <li class="nav-item">
-        <a class="nav-link active active-pro" href="{{route('profile')}}">
+        <a class="nav-link active active-pro" href="javascript:void(0)">
             <i class="ni ni-send text-primary"></i>
             <span class="nav-link-text">Profile</span>
         </a>
