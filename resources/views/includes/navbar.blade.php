@@ -47,11 +47,11 @@
 
                     @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-users"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-users">
                                 <i class="fas text-primary fa-list-alt"></i>
                                 <span class="nav-link-text">Super Admin</span>
                             </a>
-                            <div class="collapse" id="navbar-category">
+                            <div class="collapse" id="super-admin-users">
                                 <ul class="nav nav-sm flex-column">
                                  @can('create-permission')
                                     <li class="nav-item">
@@ -81,52 +81,17 @@
 
                     @endcan
 
-                    
-                    @canany(['create-permission', 'create-category'])
-                        <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
-                                <i class="fas text-primary fa-list-alt"></i>
-                                <span class="nav-link-text">Investors</span>
-                            </a>
-                            <div class="collapse" id="navbar-category">
-                                <ul class="nav nav-sm flex-column">
-                                 @can('create-permission')
-                                    <li class="nav-item">
-                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Pending</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">All Investors</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Withdraw Request</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Withdraw History</span></a>
-                                    </li>
-                                    @endcan
-{{--                                     @can( 'create-category')
-                                    <li class="nav-item">
-                                        <a href="{{route('category.create')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add New Category</span></a>
-                                    </li>
-                                    @endcan --}}
-                                </ul>
-                            </div>
-                        </li>
-
-                    @endcan
+                
 
 
                                        
                     @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-investors"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-investors">
                                 <i class="fas text-primary fa-list-alt"></i>
                                 <span class="nav-link-text">Investors</span>
                             </a>
-                            <div class="collapse" id="navbar-category">
+                            <div class="collapse" id="super-admin-investors">
                                 <ul class="nav nav-sm flex-column">
                                  @can('create-permission')
                                     <li class="nav-item">
@@ -159,11 +124,11 @@
                                                           
                     @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-affliate"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-affliate">
                                 <i class="fas text-primary fa-list-alt"></i>
                                 <span class="nav-link-text">Affliate</span>
                             </a>
-                            <div class="collapse" id="navbar-category">
+                            <div class="collapse" id="super-admin-affliate">
                                 <ul class="nav nav-sm flex-column">
                                  @can('create-permission')
                                     <li class="nav-item">
@@ -191,11 +156,11 @@
                                                                              
                     @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-service"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-service">
                                 <i class="fas text-primary fa-list-alt"></i>
                                 <span class="nav-link-text">Service</span>
                             </a>
-                            <div class="collapse" id="navbar-category">
+                            <div class="collapse" id="super-admin-service">
                                 <ul class="nav nav-sm flex-column">
                                  @can('create-permission')
                                     <li class="nav-item">
@@ -222,11 +187,11 @@
 
                     @canany(['create-permission', 'create-category'])
                     <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                        <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-sms"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-sms">
                             <i class="fas text-primary fa-list-alt"></i>
                             <span class="nav-link-text">SMS</span>
                         </a>
-                        <div class="collapse" id="navbar-category">
+                        <div class="collapse" id="super-admin-sms">
                             <ul class="nav nav-sm flex-column">
                              @can('create-permission')
                                 <li class="nav-item">
@@ -259,11 +224,11 @@
                 
                 @canany(['create-permission', 'create-category'])
                 <li class="nav-item">
-                    <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                    <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-payment"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-payment">
                         <i class="fas text-primary fa-list-alt"></i>
                         <span class="nav-link-text">Payment</span>
                     </a>
-                    <div class="collapse" id="navbar-category">
+                    <div class="collapse" id="super-admin-payment">
                         <ul class="nav nav-sm flex-column">
                          @can('create-permission')
                             <li class="nav-item">
@@ -294,11 +259,11 @@
                             
             @canany(['create-permission', 'create-category'])
             <li class="nav-item">
-                <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-accounts"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-accounts">
                     <i class="fas text-primary fa-list-alt"></i>
                     <span class="nav-link-text">Accounts</span>
                 </a>
-                <div class="collapse" id="navbar-category">
+                <div class="collapse" id="super-admin-accounts">
                     <ul class="nav nav-sm flex-column">
                      @can('create-permission')
                         <li class="nav-item">
@@ -343,11 +308,11 @@
                                   
         @canany(['create-permission', 'create-category'])
         <li class="nav-item">
-            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#super-admin-setting"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="super-admin-setting">
                 <i class="fas text-primary fa-list-alt"></i>
                 <span class="nav-link-text">Settings</span>
             </a>
-            <div class="collapse" id="navbar-category">
+            <div class="collapse" id="super-admin-setting">
                 <ul class="nav nav-sm flex-column">
                  @can('create-permission')
                     <li class="nav-item">
@@ -421,11 +386,11 @@
                         </li> 
    
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#owner-accounts"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="owner-accounts">
                                 <i class="fas text-primary fa-list-alt"></i>
                                 <span class="nav-link-text">Accounts</span>
                             </a>
-                            <div class="collapse" id="navbar-category">
+                            <div class="collapse" id="owner-accounts">
                                 <ul class="nav nav-sm flex-column">
                                  @can('owner-permission')
                                     <li class="nav-item">
@@ -494,11 +459,11 @@
 
                           
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#owner-sms"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="owner-sms">
                                 <i class="fas text-primary fa-list-alt"></i>
                                 <span class="nav-link-text">SMS</span>
                             </a>
-                            <div class="collapse" id="navbar-category">
+                            <div class="collapse" id="owner-sms">
                                 <ul class="nav nav-sm flex-column">
                                  @can('owner-permission')
                                     <li class="nav-item">
