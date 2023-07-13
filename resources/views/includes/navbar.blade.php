@@ -43,6 +43,8 @@
                         </li>
                     @endcan --}}
 
+                    <!-- Super Admin -->
+
                     @canany(['create-permission', 'create-category'])
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
@@ -373,16 +375,118 @@
          
                   
                     @endcan
-{{--                                     @can( 'create-category')
-                    <li class="nav-item">
-                        <a href="{{route('category.create')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Add New Category</span></a>
-                    </li>
-                    @endcan --}}
+
                 </ul>
             </div>
         </li>
 
     @endcan
+
+                        <!-- Super Admin End -->
+
+
+                        <!-- Owner Start -->
+                              
+                        @canany(['owner-permission', 'create-category'])
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Product</span>
+                            </a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Purchase</span>
+                            </a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Supplier</span>
+                            </a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Sales</span>
+                            </a>
+                        </li> 
+   
+                        <li class="nav-item">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                                <i class="fas text-primary fa-list-alt"></i>
+                                <span class="nav-link-text">Accounts</span>
+                            </a>
+                            <div class="collapse" id="navbar-category">
+                                <ul class="nav nav-sm flex-column">
+                                 @can('owner-permission')
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Create Income</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">All Income</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Income Category</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Create Expense</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">All Expenses</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Expense Category</span></a>
+                                    </li>
+                
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Report</span></a>
+                                    </li>
+                
+                
+                                  
+                         
+                                  
+                                    @endcan
+                
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Report</span>
+                            </a>
+                        </li> 
+
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">User</span>
+                            </a>
+                        </li> 
+
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Employee</span>
+                            </a>
+                        </li> 
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Show Room Profile</span>
+                            </a>
+                        </li> 
+                
+                    @endcan
+                
+                        <!-- Owner End -->
 
 
 
