@@ -380,6 +380,13 @@
             </div>
         </li>
 
+        <li class="nav-item">
+            <a class="nav-link active active-pro" href="javascript:void(0)">
+                <i class="ni ni-send text-primary"></i>
+                <span class="nav-link-text">Profile</span>
+            </a>
+        </li> 
+
     @endcan
 
                         <!-- Super Admin End -->
@@ -483,6 +490,47 @@
                                 <span class="nav-link-text">Show Room Profile</span>
                             </a>
                         </li> 
+
+
+                          
+                        <li class="nav-item">
+                            <a class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}" href="#navbar-category"  data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-category">
+                                <i class="fas text-primary fa-list-alt"></i>
+                                <span class="nav-link-text">SMS</span>
+                            </a>
+                            <div class="collapse" id="navbar-category">
+                                <ul class="nav nav-sm flex-column">
+                                 @can('owner-permission')
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">SMS Sent</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">SMS Payment Request</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">All History</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('category.index')}}" class="nav-link"><span class="sidenav-mini-icon">D </span><span class="sidenav-normal">Total Balance</span></a>
+                                    </li>
+
+                
+                                  
+                         
+                                  
+                                    @endcan
+                
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active active-pro" href="javascript:void(0)">
+                                <i class="ni ni-send text-primary"></i>
+                                <span class="nav-link-text">Setting</span>
+                            </a>
+                        </li> 
                 
                     @endcan
                 
@@ -499,12 +547,7 @@
 
 
 
-    <li class="nav-item">
-        <a class="nav-link active active-pro" href="javascript:void(0)">
-            <i class="ni ni-send text-primary"></i>
-            <span class="nav-link-text">Profile</span>
-        </a>
-    </li> 
+
 
 
 
